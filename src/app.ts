@@ -17,3 +17,5 @@ App({
     userInfo: null
   }
 })
+
+const str: string = '1';
