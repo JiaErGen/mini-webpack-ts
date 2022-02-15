@@ -1,8 +1,3 @@
-/*
- * @Date: 2022-02-15 14:52:45
- * @Description: webpack 配置文件
- */
-
 const path = require('path')
 const fs = require('fs')
 const WebpackBar = require('webpackbar');
@@ -94,7 +89,7 @@ module.exports = {
       },
       // 处理图片等资源
       {
-        test: /\.(png|svg|jpg|jpeg|gif|md|wxml|wxss|DS_Store)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|md|axml|acss|sjs|wxs|wxss|DS_Store|snap|txt|ttf|woff|woff2)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -112,6 +107,7 @@ module.exports = {
   ],
 }
 
+// 获取指定目录下的全部文件
 function getEntry(dir, list = []) {
   const files = fs.readdirSync(dir, { withFileTypes: true });
   files.forEach((item) => {
