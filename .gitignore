@@ -1,0 +1,20 @@
+dist/
+deploy_versions/
+.temp/
+.rn_temp/
+**/node_modules/
+node_modules/
+node_modules_bak/
+.vscode/settings.json
+.idea/
+.DS_Store
+.history
+
+# file
+git-merge.bat
+
+
+# npm lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
